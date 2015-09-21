@@ -43,6 +43,9 @@
 
     <ul style="display: table-cell; vertical-align: middle; padding:0px">
         <li>
+            <a href="update_home_page.php">Update Home Page </a>
+        </li>
+        <li>
             <a href="update_offers.php">Update Offer Images</a>
         </li>
         <li>

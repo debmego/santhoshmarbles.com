@@ -145,6 +145,34 @@
             </div>
             <div class="clearfix"></div>
             <br/><br/><br/>
+            <!--- Resume Ends Here --->
+            <div>
+                <link href="css/owl.carousel.css" rel="stylesheet">
+                <link href="css/owl.theme.css" rel="stylesheet">
+                <script type="text/javascript">
+                    $(document).ready(function () {
+
+                        $("#owl-demo").owlCarousel({
+                            items: 4, autoPlay: 3000,
+                            lazyLoad: true,
+                            navigation: true
+                        });
+
+                    });
+                </script>
+                <script src="js/owl.carousel.js"></script>
+                <div id="owl-demo" class="owl-carousel">
+                    <?php
+                    $dirname = "images/home_page/";
+                    $images = glob($dirname . "*");
+                    //Display image using foreach loop
+                    foreach ($images as $image) {
+                        echo '<div class="item"><img class="lazyOwl" data-src="' . $image . '" alt="' . $image . '"></div>';
+                    }
+                    ?>
+                </div>
+            </div>
+            <br/><br/><br/>
         </div>
     </div>
 </div>

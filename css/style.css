@@ -1564,3 +1564,7 @@ li.new:before {
         background-color: deepskyblue;
     }
 }
+
+.arrivals.row > div {
+    margin: 15px 0px;
+}

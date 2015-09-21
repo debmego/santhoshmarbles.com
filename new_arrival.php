@@ -14,32 +14,20 @@
         </div>
     </div>
     <!--- Resume Ends Here --->
-    <br/><br/><br/><br/>
-    <div>
-        <link href="css/owl.carousel.css" rel="stylesheet">
-        <link href="css/owl.theme.css" rel="stylesheet">
-        <script type="text/javascript">
-            $(document).ready(function () {
-
-                $("#owl-demo").owlCarousel({
-                    items: 4, autoPlay: 3000,
-                    lazyLoad: true,
-                    navigation: true
-                });
-
-            });
-        </script>
-        <script src="js/owl.carousel.js"></script>
-        <div id="owl-demo" class="owl-carousel">
+    <div class="container">
+        <div class="arrivals row">
             <?php
             $dirname = "images/new_arrivals/";
             $images = glob($dirname . "*");
             //Display image using foreach loop
             foreach ($images as $image) {
-                echo '<div class="item"><img class="lazyOwl zoomable" data-src="' . $image . '" alt="' . $image . '"></div>';
+                echo '<div class="col-sm-4 col-xs-12"><img style="width:100%" class="zoomable" src="' . $image . '" alt="' . $image . '"></div>';
             }
             ?>
+
         </div>
     </div>
+
+
 
 <?php include_once 'footer.php' ?>
